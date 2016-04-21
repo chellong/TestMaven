@@ -1,0 +1,33 @@
+# !SESSION 2016-04-21 16:30:05.655
+# version: 1.1
+# verbose: true
+# The following option strings are specified for this debug session:
+# 	null
+| main | 2016-04-21 16:30:05.655 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: reg query "HKLM\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone" |
+| main | 2016-04-21 16:30:05.831 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for reg query "HKLM\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone" |
+| Output Stream Monitor | 2016-04-21 16:30:05.878 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2016-04-21 16:30:05.880 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v7.1
+HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v8.0
+HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v8.1
+ |
+| main | 2016-04-21 16:30:05.884 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: reg query "HKLM\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v8.1\Install Path" /v "Install Path" |
+| main | 2016-04-21 16:30:05.902 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for reg query "HKLM\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v8.1\Install Path" /v "Install Path" |
+| Output Stream Monitor | 2016-04-21 16:30:05.964 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2016-04-21 16:30:05.965 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\Microsoft SDKs\WindowsPhone\v8.1\Install Path
+    Install Path    REG_SZ    C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\
+
+ |
+| main | 2016-04-21 16:30:06.088 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Sync Execute command line: "C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Tools\AppDeploy\AppDeployCmd.exe" /EnumerateDevices |
+| main | 2016-04-21 16:30:06.355 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | Creating TracingStreamListeners for "C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.1\Tools\AppDeploy\AppDeployCmd.exe" /EnumerateDevices |
+| Output Stream Monitor | 2016-04-21 16:30:09.462 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 
+ |
+| Output Stream Monitor | 2016-04-21 16:30:09.538 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 设备索引	设备名称
+ |
+| Output Stream Monitor | 2016-04-21 16:30:09.539 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | ------------	-------------------------------
+ |
+| Output Stream Monitor | 2016-04-21 16:30:09.548 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 |  0		Device
+ |
+| Output Stream Monitor | 2016-04-21 16:30:09.548 | org.eclipse.thym.core | /debug | org.eclipse.thym.core.HybridCore | trace | 175 | 完成。
+ |

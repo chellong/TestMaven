@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.thym.wp.core.WPLaunchConfigurationType">
+<stringAttribute key="org.eclipse.thym.core.ATTR_BUILD_SCOPE" value=""/>
+</launchConfiguration>
