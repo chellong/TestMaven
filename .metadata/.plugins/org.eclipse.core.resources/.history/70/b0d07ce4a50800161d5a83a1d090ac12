@@ -1,0 +1,8 @@
+package com.example.mvcdemo.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface CourseService {
+	Course getCoursebyId(Integer courseId);
+}
