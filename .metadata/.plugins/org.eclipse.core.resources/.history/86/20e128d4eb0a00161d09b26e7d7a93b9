@@ -1,0 +1,10 @@
+package com.example.demo.servlet;
+
+import javax.servlet.ServletContextAttributeEvent;
+import javax.servlet.ServletContextAttributeListener;
+import javax.servlet.http.HttpServlet;
+
+public class GetClientIp extends HttpServlet {
+       
+	
+}

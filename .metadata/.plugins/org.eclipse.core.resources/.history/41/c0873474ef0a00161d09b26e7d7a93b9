@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=GB2312"
+	pageEncoding="GB2312"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>获取客户端的IP地址</title>
+</head>
+
+<body>
+	<%@page contentType="text/html;charset=gb2312"%>
+	<%!
+public String getClientIp(HttpServletRequest request) { 
+         String ip = request.getHeader("x-forwarded-for"); 
+         if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) { 
+            ip = request.getHeader("Proxy-Client-IP"); 
+        } 
+        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) { 
+            ip = request.getHeader("WL-Proxy-Client-IP"); 
+         } 
+        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) { 
+            ip = request.getRemoteAddr(); 
+         } 
+       return ip;
+ 
+}
+public static String getMyIp()throws Exception{
+     String cmd="ipconfig";
+     Process p=Runtime.getRuntime().exec(cmd);
+     java.io.InputStream in=p.getInputStream();
+     java.io.BufferedReader br=new java.io.BufferedReader(new java.io.InputStreamReader(in));
+     String line=null;
+     String ip=null;
+     while((line=br.readLine())!=null){
+        System.out.print(line+"<br>");
+        if(line.indexOf("IP Address")!=-1){
+           ip=line.substring(line.indexOf(":")+1);
+           break;
+        }  
+     }
+     in.close();
+     br.close();
+     return ip;
+}
+%>
+	<%
+		out.print("ip:" + getClientIp(request) + "," + getMyIp());
+	%>
+</body>
+</html>
