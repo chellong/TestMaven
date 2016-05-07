@@ -84,6 +84,8 @@
 			<item value="com.example.HelloWorldMaven "/>
 		</list>
 		<list key="artifactId">
+			<item value="SimpleBBS"/>
+			<item value="GetClientIp"/>
 			<item value="SpringmvcUseMaven"/>
 			<item value="MavenWebDemo"/>
 			<item value="D"/>
